@@ -1,9 +1,11 @@
 import React from 'react'
 import Banner from "../assets/rep.jpg"
+import { useState } from "react";
 import "./main.css";
 const Main = () => {
+
   return (
-    <div className='Banner' data-reactid="nav"
+    <div className='Banner false' 
     style={{
       backgroundImage: 'url('+Banner+')',
       backgroundSize: "cover",

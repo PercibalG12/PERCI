@@ -10,10 +10,17 @@ body {
   }
   
 
-  body[data-nav="true"] > main {
-    transform: translateY(-50%);
+  body[data-nav="true"] > .Banner { 
+     transform: translateY(-50%);   /*  shoudl be .Banner?*/
+  }
+
+  .true{
+    transform: translateY(-50%); 
   }
   
+  .false{
+    transform: translateY(0%); 
+  }
   nav {
     height: 50vh;
     width: 100%;
