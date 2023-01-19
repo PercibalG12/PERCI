@@ -10,11 +10,7 @@ body {
   }
   
 
-  body[data-nav="true"] > .Banner { 
-     transform: translateY(-50%);   /*  shoudl be .Banner?*/
-  }
-
-  .true{
+   .true{
     transform: translateY(-50%); 
   }
   
