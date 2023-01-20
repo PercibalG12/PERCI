@@ -2,14 +2,12 @@ import React from 'react'
 import Banner from "../assets/rep.jpg"
 import { useState } from "react";
 import "./main.css";
-import Mainbtn from './Mainbtn';
 const Main = () => {
-  const [className, setClassName] = useState('false')
+  const [isActive, setIsActive] = useState(false);
   
   return (
     <div>
-      <Mainbtn className={className} setClassName={setClassName} />
-      <div className={`Banner ${className}`} 
+      <div className={`banner ${isActive ? 'active' : ''}`}
         style={{
           backgroundImage: 'url('+Banner+')',
           backgroundSize: "cover",

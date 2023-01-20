@@ -1,14 +1,10 @@
 import React from 'react'
 import "./main.css";
-// import Main from './Main';
 import { useState } from "react";
 
-const Mainbtn = (props) => { 
-  const handleClick = () => {
-    props.setClassName(!props.className)
-  }
+const Mainbtn = ({onClick}) => { 
   return (
-    <button id="nav-toggle" type='button' onClick={handleClick} > 
+    <button id="nav-toggle" type='button'onClick={onClick} > 
   <p>EXPLORE</p>
   {/* handleClick={className}  */}
 </button>
@@ -16,3 +12,4 @@ const Mainbtn = (props) => {
 }
 
 export default Mainbtn
+
