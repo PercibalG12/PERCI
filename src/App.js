@@ -9,7 +9,6 @@ const App = () => {
     <div>
     <Main/> 
     <Navmain/> 
-    <Mainbtn/>
    </div>
     // npm install -g npm@9.3.0
     

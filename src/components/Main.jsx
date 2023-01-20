@@ -1,13 +1,16 @@
-import React from 'react'
+import Mainbtn from './Mainbtn'
+import { useState } from 'react'
 import Banner from "../assets/rep.jpg"
-import { useState } from "react";
-import "./main.css";
 const Main = () => {
-  const [isActive, setIsActive] = useState(false);
-  
+  const [button, setButton] = useState(false)
+  const handleClick = () => {
+    setButton(!button)
+  }
+
   return (
     <div>
-      <div className={`banner ${isActive ? 'active' : ''}`}
+      <Mainbtn handleClick={handleClick} button={button} />
+      <div className={`Banner ${button}`} 
         style={{
           backgroundImage: 'url('+Banner+')',
           backgroundSize: "cover",
@@ -23,6 +26,4 @@ const Main = () => {
     </div>
   );
 }
-
-
 export default Main

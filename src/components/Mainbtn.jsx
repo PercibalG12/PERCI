@@ -1,15 +1,9 @@
-import React from 'react'
 import "./main.css";
-import { useState } from "react";
-
-const Mainbtn = ({onClick}) => { 
+const Mainbtn = (props) => {
   return (
-    <button id="nav-toggle" type='button'onClick={onClick} > 
-  <p>EXPLORE</p>
-  {/* handleClick={className}  */}
-</button>
-  )
-}
-
-export default Mainbtn
-
+    <button id="nav-toggle" type="button" onClick={props.handleClick} className={`${props.button}`}>
+      <p>EXPLORE</p>
+    </button>
+  );
+};
+export default Mainbtn;
