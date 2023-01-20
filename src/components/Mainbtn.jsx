@@ -4,9 +4,13 @@ import "./main.css";
 import { useState } from "react";
 
 const Mainbtn = (props) => { 
+  const handleClick = () => {
+    props.setClassName(!props.className)
+  }
   return (
-    <button id="nav-toggle" type='button' onClick={props.handleClick} > 
+    <button id="nav-toggle" type='button' onClick={handleClick} > 
   <p>EXPLORE</p>
+  {/* handleClick={className}  */}
 </button>
   )
 }

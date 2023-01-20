@@ -5,13 +5,10 @@ import "./main.css";
 import Mainbtn from './Mainbtn';
 const Main = () => {
   const [className, setClassName] = useState('false')
-  const handleClick = () => {
-    setClassName('true')
-   
-  }
+  
   return (
     <div>
-      <Mainbtn handleClick={handleClick} />
+      <Mainbtn className={className} setClassName={setClassName} />
       <div className={`Banner ${className}`} 
         style={{
           backgroundImage: 'url('+Banner+')',
