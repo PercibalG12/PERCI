@@ -36,8 +36,9 @@ body {
     transition: transform 500ms cubic-bezier(.13,.53,.38,.97); 
   }
   
-  body[data-nav="true"] > nav > #nav-links {
+  .Banner .true > nav > #nav-links {
     transform: translateY(0%) scale(1);
+    /* body[data-nav="true"] */
   }
   
   #nav-links > .nav-link {
@@ -86,13 +87,15 @@ body {
     transform: translateX(-50%) scale(0.96);
   }
   
-  body[data-nav="true"] > #nav-toggle {
+  .Banner .true > #nav-toggle {
     background-color: rgb(85, 130, 149);
+    /* body[data-nav="true"] */
   }
   
-  body:not([data-nav="true"]) > #nav-toggle:hover > .open {
+  .Banner .false > #nav-toggle:hover > .open {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
+    /* body:not([data-nav="true"]) */
   }
   
   #nav-toggle > i {
@@ -108,9 +111,10 @@ body {
     transition-duration: 400ms;
   }
   
-  body[data-nav="true"] > #nav-toggle > .close {
+ .Banner .true > #nav-toggle > .close {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
+    /* body[data-nav="true"] */
   }
   
  
